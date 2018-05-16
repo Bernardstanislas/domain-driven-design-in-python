@@ -76,7 +76,7 @@
 def send_mail_on_complete(sender, **kwargs):
     if sender.completed:
         mailer_service.send(...)
-    
+
 </code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 315px;" data-block-id="755e4497c8b06a22737dc87257cd9ad9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;">
 <p style="text-align:center"><strong>Test?</strong></p>
@@ -106,7 +106,7 @@ def send_mail_on_complete(sender, **kwargs):
 <h1>DDD</h1>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 286px; height: auto;" data-block-id="e1f21d21e935f20b10a6835cfbce8934"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
-<blockquote>Le domain driven design est une approche de l'architecture logicielle qui vise à séparer le modèle de son implémentation</blockquote>
+<blockquote>Domain-driven design is an approach to software development for complex needs by connecting the implementation to an evolving model.</blockquote>
 </div></div></section><section data-id="26dfc9e0941fbd701ce45d6d489e64f9"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 7px; height: auto;" data-block-id="ac388adf9338017129e8dbf52311b272"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
 <h1><span style="font-size:0.7em">Separate the model from the implementation</span></h1>
 </div></div>
@@ -185,7 +185,7 @@ class TaskService():
 
         task.completed = True
         self.mailer_service.send(...)
-        
+
         self.task_repository.save(task)</code></pre></div></div>
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 237px; height: 155px; left: 706px; top: 27px;" data-block-id="ec5e582cd726911503839755d9a6c3eb"><div class="sl-block-content notranslate" data-highlight-theme="obsidian" style="z-index: 13; font-size: 64%;"><pre class="markdown"><code>└── domain
     ├── task
@@ -239,7 +239,7 @@ class TaskService():
 
         task.completed = True
         self.mailer_service.send(...)
-        
+
         self.task_repository.save(task)</code></pre></div></div>
 <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 36px; height: 36px; left: 489px; top: 277px;" data-block-id="6ea637f5cfab5e9bede9140fc544a7b2"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="symbol-happy" data-shape-fill-color="rgb(255, 217, 102)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(255, 217, 102)"><path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM16 18.711c3.623 0 7.070-0.963 10-2.654-0.455 5.576-4.785 9.942-10 9.942-5.215 0-9.544-4.371-10-9.947 2.93 1.691 6.377 2.658 10 2.658zM8 11c0-1.657 0.895-3 2-3s2 1.343 2 3c0 1.657-0.895 3-2 3-1.105 0-2-1.343-2-3zM20 11c0-1.657 0.895-3 2-3s2 1.343 2 3c0 1.657-0.895 3-2 3-1.105 0-2-1.343-2-3z"></path></g></svg></div></div></div>
 <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 36px; height: 36px; left: 829px; top: 277px;" data-block-id="81ea000cc0ba8b50e91dea5ed58ac0ad"><div class="sl-block-style" style="z-index: 14;"><div class="sl-block-content" data-shape-type="symbol-happy" data-shape-fill-color="rgb(255, 217, 102)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(255, 217, 102)"><path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM16 18.711c3.623 0 7.070-0.963 10-2.654-0.455 5.576-4.785 9.942-10 9.942-5.215 0-9.544-4.371-10-9.947 2.93 1.691 6.377 2.658 10 2.658zM8 11c0-1.657 0.895-3 2-3s2 1.343 2 3c0 1.657-0.895 3-2 3-1.105 0-2-1.343-2-3zM20 11c0-1.657 0.895-3 2-3s2 1.343 2 3c0 1.657-0.895 3-2 3-1.105 0-2-1.343-2-3z"></path></g></svg></div></div></div></section></section><section class="stack" data-id="2723210d70866ea5a82b933be5a70d45"><section data-id="b68f69f6f4ee5988a78ee3f4906bb100"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="68dee646d29254ec5555bc4290f94ec2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
@@ -338,7 +338,7 @@ class TaskService():
 			</div>
 		</div>
 
-		
+
 <script>
 	var SLConfig = {"current_user":{"id":379774,"username":"bernardstanislas","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/565117131215e1964de1d2d5ca730420?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":215981,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":null,"phone_number":null,"phone_country_code":null,"media_sources":null},"email":"bernardstanislas@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":5032941,"storage_limit":262144000},"deck":{"id":1254791,"slug":"domain-driven-design","title":"Domain driven design","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-05-15T18:56:17.333Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/ba8684708fcd186e38f87829a9adf85b/thumb.jpg?1526422852","view_count":1,"user":{"id":379774,"username":"bernardstanislas","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/565117131215e1964de1d2d5ca730420?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":215981,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"opensans","theme_color":"blue-yellow","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":31,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1526422852568,"font_typekit":null,"font_google":null,"notes":{"86366e98fbeaa26a2bcb1cc1e7de1042":"Un exemple d'implémentation naïve : le mailer print dans la console","979778da9eddf0ae9bc11a0cdafaf9ee":"Rien de technique, je sais juste qu'un mailer peut envoyer un mail","94815fba749f3674f673487e81f6c4da":"Rien de technique, un repository peut récupérer des trucs, et sauver des trucs. DB, cache, HTTP, balec","26dfc9e0941fbd701ce45d6d489e64f9":"Dans les slides qui suivent, on met en place le métier, sans détail technique, le PO et les gens du métier peuvent comprendre","458e0f5f1cc44348a34b269d49d0d4cf":"Attendre que les gens lisent","fd84f1d6e5f1ca675b5d5500bc897e17":"Attendre que les gens voient que y'a rien","b3eee938fc1bda87e63b1c3effa43db3":"Alors voilà ce que je propose","fb173ffd623e105352307e70dd28a766":"Là si on ajoute une route, on peut appeler le task service et on a un truc qui marche modulo un mailer\n\nDonner un exemple d'un user service, qui inviterait des users par mail, et qui aurait besoin d'un mailer","4782e89f7992b5e6390c27bc1e7f9bd2":"Donner du why"}},"user":{"id":379774,"username":"bernardstanislas","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/565117131215e1964de1d2d5ca730420?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":215981,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
@@ -407,7 +407,7 @@ c.setAttribute("allowfullscreen",""),c.setAttribute("mozallowfullscreen",""),c.s
 			if( window.hljs ) hljs.initHighlightingOnLoad();
 		</script>
 
-		
+
 
 	</body>
 </html>
